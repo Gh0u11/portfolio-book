@@ -1,0 +1,40 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Book</title>
+
+  <!-- jQuery (через CDN) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Turn.js (через CDN jsDelivr) -->
+  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
+
+  <style>
+    body {
+      background: #eee;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+    }
+    #flipbook {
+      width: 100%;
+      max-width: 1600px;
+      height: auto;
+    }
+    .page {
+      width: auto;
+      height: auto;
+    }
+    .page img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+    .page img.zoomed {
+      transform: scale(2);
+      cursor: zoom-out;
+      z-index: 999;
+      position: relative;
+    }
+  </style>
+</head>
